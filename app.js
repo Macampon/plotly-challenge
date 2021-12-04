@@ -37,7 +37,7 @@ function initLoad() {
     
      
       barhovertext = hovertext.slice(0,10).reverse();
-      console.log("BARhover gia:" , barhovertext)
+      // console.log("BARhover gia:" , barhovertext)
       // Create horizontal bar plot
       var trace1 = {
         x: xbar.reverse(),
@@ -88,7 +88,7 @@ function initLoad() {
       var demographic = data.metadata[0];
       var meta = d3.select("#sample-metadata");
       Object.keys(demographic).forEach((k) => {
-      console.log("Demographic gia", demographic);
+      // console.log("Demographic gia", demographic);
       console.log(k, demographic[k]);
        meta.append("p").attr("class", "card-text").text(`${k}: ${demographic[k]}`);
       });
